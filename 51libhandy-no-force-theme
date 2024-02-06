@@ -1,0 +1,9 @@
+# This file is sourced by Xsession(5), not executed.
+case "$XDG_CURRENT_DESKTOP" in
+  *GNOME*|*Gnome*)
+    ;;
+  *)
+    export LD_PRELOAD="libhandy-no-force-theme.so.0${LD_PRELOAD:+:$LD_PRELOAD}"
+    ;;
+esac
+
