@@ -27,7 +27,7 @@ install(TARGETS handy-no-force-theme LIBRARY
 )
 
 install(FILES 51libhandy-no-force-theme
-    DESTINATION "${CMAKE_INSTALL_SYSCONFDIR}/Xsession.d"
+    DESTINATION "${CMAKE_INSTALL_FULL_SYSCONFDIR}/X11/Xsession.d"
     PERMISSIONS
         OWNER_READ OWNER_WRITE
         GROUP_READ
